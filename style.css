@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid black; */
+}
+img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.absolute{
+  position: absolute;
+}
+/* nav-section styling */
+.nav-section {
+  display: flex;
+   background-color: #f7efa1;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  li {
+    a {
+      color: black;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 620;
+    }
+  }
+}
+.heder-logo {
+  width: 100px;
+}
+/* DROUPDOWN MENU STYLING */
+.droupdown-menu {
+  background-color: #f7efa1;
+  border-radius: 0.2rem;
+  display: none;
+}
+.z-999 {
+  z-index: 999;
+}
+.top-20 {
+  top: 45px;
+}
+
+.droupdown-link:hover .droupdown-menu {
+  display: block;
+}
+
+/* PORTFOLIO SECTION STYLING */
+.portfolio-info {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background-color: #fff;
+  padding: 1rem 0.5rem;
+}
+.protfolio-img img {
+  border-top-left-radius: 3.5rem;
+  border-top-right-radius: 3.5rem;
+  /* border-bottom-right-radius: 3.5rem; */
+}
+.site-title {
+  font-weight: 650;
+}
+.portfolio-info {
+  width: 85%;
+}
+.arrow-btn {
+  background-color: #0079a4;
+  color: #ffffff;
+  padding: 11px 8px;
+  border-radius: 0.5rem;
+}
+.portfolio-card {
+  margin-top: 2rem;
+}
+.portfolio-info {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  /* border-bottom-right-radius: 4.5rem; */
+}
+.portfolio-card:hover .portfolio-info {
+  transform: scale(1.2);
+}
+
+/* indraprstha section styling */
+table tr th {
+  font-size: 10px;
+}
+table tbody tr td {
+  font-size: 10px;
+}
+.top-15 {
+  top: 20px;
+}
+
+
+/* FOOTER SECTION STYLING */
+.footer-links {
+  li {
+    padding: 0.5rem 0;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+
+/* responsive styling */
+
+@media screen and (max-width: 992px) {
+  .nav-links{
+    display: block;
+    position: absolute;
+    top: 0;
+    left:-300px;
+    flex-direction: column;
+    z-index: 999;
+    background-color: #f7efa1;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    justify-content: start;
+    li{
+      margin: 1.2rem 0;
+    }
+  }
+  .show-menu{
+    transition: all 0.3s;
+    left:0;
+  }
+
+ .droupdown-link{
+  display: block;
+  width: 100%;
+  position: relative;
+}
+  .droupdown-menu{
+    position: static;
+    background-color: black;
+    top: 25px;
+    left: -10px;
+
+    li{
+         margin:0 !important;
+         padding: .5rem;
+     a{ 
+     
+      color: #fff;
+    }
+  }
+  }
+}
+@media(min-width: 992px){
+  .mob-nav-btn, .cancel{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .portfolio-info {
+    left: 23px;
+}
+
+}
